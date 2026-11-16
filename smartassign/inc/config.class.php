@@ -72,6 +72,22 @@ trait PluginSmartassignConfigBody
     }
 
     /**
+     * Executa DDL de instalação/remoção de forma compatível com GLPI 10.0.0–10.0.10 (query) e 10.0.11+ (doQuery).
+     *
+     * @param mixed $db
+     */
+    private static function execDdl($db, string $sql): void
+    {
+        if (method_exists($db, 'doQuery')) {
+            $db->doQuery($sql);
+            return;
+        }
+        if (method_exists($db, 'query')) {
+            $db->query($sql);
+        }
+    }
+
+    /**
      * Instala as tabelas do plugin no banco do GLPI.
      */
     public static function installSchema(): void
@@ -79,7 +95,8 @@ trait PluginSmartassignConfigBody
         global $DB;
 
         if (!$DB->tableExists(self::TABLE)) {
-            $DB->doQuery(
+            self::execDdl(
+                $DB,
                 "CREATE TABLE `" . self::TABLE . "` (
                     `id` int unsigned NOT NULL AUTO_INCREMENT,
                     `entities_id` int unsigned NOT NULL DEFAULT '0',
@@ -99,7 +116,8 @@ trait PluginSmartassignConfigBody
         }
 
         if (!$DB->tableExists(self::STATE_TABLE)) {
-            $DB->doQuery(
+            self::execDdl(
+                $DB,
                 "CREATE TABLE `" . self::STATE_TABLE . "` (
                     `id` int unsigned NOT NULL AUTO_INCREMENT,
                     `groups_id` int unsigned NOT NULL DEFAULT '0',
@@ -112,7 +130,8 @@ trait PluginSmartassignConfigBody
         }
 
         if (!$DB->tableExists(self::LOGS_TABLE)) {
-            $DB->doQuery(
+            self::execDdl(
+                $DB,
                 "CREATE TABLE `" . self::LOGS_TABLE . "` (
                     `id` int unsigned NOT NULL AUTO_INCREMENT,
                     `tickets_id` int unsigned NOT NULL DEFAULT '0',
@@ -139,7 +158,7 @@ trait PluginSmartassignConfigBody
 
         foreach ([self::LOGS_TABLE, self::STATE_TABLE, self::TABLE] as $table) {
             if ($DB->tableExists($table)) {
-                $DB->doQuery('DROP TABLE `' . $table . '`');
+                self::execDdl($DB, 'DROP TABLE `' . $table . '`');
             }
         }
     }
