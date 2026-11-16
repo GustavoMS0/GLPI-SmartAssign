@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <name>Smart Assign</name>
+   <key>smartassign</key>
+   <state>stable</state>
+   <logo>https://raw.githubusercontent.com/GustavoMS0/GLPI-SmartAssign/main/smartassign.png</logo>
+   <description>
+      <short>
+         <en>Automatic ticket assignment by round-robin or least-loaded technician in GLPI.</en>
+         <pt>Atribuição automática de chamados por rodízio ou menor fila para o GLPI.</pt>
+      </short>
+      <long>
+         <en>Distributes GLPI tickets assigned to technician groups using round-robin or least-loaded strategies, respecting active user validity, open ticket limits, excluded users, and recursive entity configuration.</en>
+         <pt>Distribui automaticamente chamados vinculados a grupos técnicos no GLPI por rodízio ou menor fila, respeitando vigência dos usuários, limite global de chamados em aberto, lista de exclusão e configuração recursiva por entidade.</pt>
+      </long>
+   </description>
+   <homepage>https://github.com/GustavoMS0/GLPI-SmartAssign</homepage>
+   <download>https://github.com/GustavoMS0/GLPI-SmartAssign/releases</download>
+   <issues>https://github.com/GustavoMS0/GLPI-SmartAssign/issues</issues>
+   <readme>https://github.com/GustavoMS0/GLPI-SmartAssign/blob/main/README.md</readme>
+   <changelog>https://github.com/GustavoMS0/GLPI-SmartAssign/blob/main/CHANGELOG.md</changelog>
+   <authors>
+      <author>G. Martins</author>
+   </authors>
+   <versions>
+      <version>
+         <num>1.0.0</num>
+         <compatibility>~12.0</compatibility>
+         <download_url>https://github.com/GustavoMS0/GLPI-SmartAssign/releases/download/v1.0.0/smartassign-1.0.0.zip</download_url>
+      </version>
+      <version>
+         <num>1.0.0</num>
+         <compatibility>~11.0</compatibility>
+         <download_url>https://github.com/GustavoMS0/GLPI-SmartAssign/releases/download/v1.0.0/smartassign-1.0.0.zip</download_url>
+      </version>
+      <version>
+         <num>1.0.0</num>
+         <compatibility>~10.0</compatibility>
+         <download_url>https://github.com/GustavoMS0/GLPI-SmartAssign/releases/download/v1.0.0/smartassign-1.0.0.zip</download_url>
+      </version>
+   </versions>
+   <langs>
+      <lang>pt_BR</lang>
+   </langs>
+   <license>GPL v3+</license>
+   <tags>
+      <en>
+         <tag>tickets</tag>
+         <tag>assignment</tag>
+         <tag>round-robin</tag>
+         <tag>least-loaded</tag>
+         <tag>helpdesk</tag>
+         <tag>servicedesk</tag>
+      </en>
+      <pt>
+         <tag>chamados</tag>
+         <tag>atribuicao</tag>
+         <tag>rodizio</tag>
+         <tag>menor-fila</tag>
+         <tag>helpdesk</tag>
+         <tag>servicedesk</tag>
+      </pt>
+   </tags>
+</root>

@@ -1,0 +1,199 @@
+/**
+ * ------------------------------------------------------------------------
+ * Smart Assign - Estilos da página de configuração
+ * Copyright (C) 2026 by G. Martins (GPLv3+)
+ * ------------------------------------------------------------------------
+ */
+
+.smartassign-container {
+    max-width: 1020px;
+    margin: 16px auto;
+    padding: 0 12px;
+}
+
+.smartassign-card {
+    background: var(--tblr-bg-surface, #ffffff);
+    border: 1px solid var(--tblr-border-color, #e2e8f0);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 18px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.smartassign-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.smartassign-title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--tblr-body-color, #1e293b);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.smartassign-subtitle {
+    margin: 6px 0 0 0;
+    font-size: 0.9rem;
+    color: var(--tblr-secondary, #64748b);
+}
+
+.smartassign-entity-picker {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.smartassign-entity-field {
+    flex: 1 1 320px;
+}
+
+.smartassign-status-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.smartassign-section-title {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: var(--tblr-body-color, #1e293b);
+    margin: 0 0 14px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--tblr-border-color, #e2e8f0);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.smartassign-switches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 12px;
+}
+
+.smartassign-switch-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0;
+    padding: 12px 14px;
+    border: 1px solid var(--tblr-border-color, #e2e8f0);
+    border-radius: 6px;
+    background: var(--tblr-bg-surface-secondary, #f8fafc);
+    cursor: pointer;
+}
+
+.smartassign-switch-box .form-check-input {
+    margin-left: 0;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.smartassign-switch-box .form-check-label {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.smartassign-mode-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 12px;
+}
+
+.smartassign-mode-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 14px 16px;
+    border: 1px solid var(--tblr-border-color, #e2e8f0);
+    border-radius: 6px;
+    background: var(--tblr-bg-surface-secondary, #f8fafc);
+    cursor: pointer;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.smartassign-mode-option.is-selected {
+    border-color: var(--tblr-primary, #206bc4);
+    background: var(--tblr-primary-lt, #eef5ff);
+}
+
+.smartassign-mode-option .form-check-input {
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.smartassign-mode-name {
+    font-weight: 600;
+    color: var(--tblr-body-color, #1e293b);
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.smartassign-hint {
+    display: block;
+    font-size: 0.82rem;
+    line-height: 1.35;
+    color: var(--tblr-secondary, #64748b);
+}
+
+.smartassign-field-row {
+    max-width: 440px;
+}
+
+.smartassign-number-input {
+    max-width: 160px;
+    margin-bottom: 4px;
+}
+
+.smartassign-excluded-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.smartassign-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 9px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    background: var(--tblr-bg-surface-secondary, #f1f5f9);
+    border: 1px solid var(--tblr-border-color, #cbd5e1);
+    color: var(--tblr-body-color, #334155);
+}
+
+.smartassign-select-multi {
+    min-height: 170px;
+}
+
+.smartassign-actions {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 8px;
+}
+
+.smartassign-logs-table th {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--tblr-secondary, #64748b);
+}
+
+.smartassign-logs-table td {
+    vertical-align: middle;
+    font-size: 0.88rem;
+}

@@ -1,0 +1,206 @@
+# Smart Assign - GLPI plugin
+# Copyright (C) 2026 G. Martins
+# This file is distributed under the same license as the Smart Assign package (GPLv3+).
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Smart Assign 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/GustavoMS0/GLPI-SmartAssign/issues\n"
+"POT-Creation-Date: 2026-11-16 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: front/config.form.php
+msgid "Origem da requisição não permitida."
+msgstr ""
+
+#: front/config.form.php
+msgid "Configuração própria removida. A entidade volta a seguir a herança."
+msgstr ""
+
+#: front/config.form.php
+msgid "Configuração do Smart Assign salva com sucesso."
+msgstr ""
+
+#: front/config.form.php
+msgid "Não foi possível salvar a configuração do Smart Assign."
+msgstr ""
+
+#: front/config.form.php
+msgid "inativo"
+msgstr ""
+
+#: front/config.form.php
+msgid "Smart Assign"
+msgstr ""
+
+#: front/config.form.php
+msgid "Smart Assign — Distribuição automática de chamados"
+msgstr ""
+
+#: front/config.form.php
+msgid "Configure a estratégia de distribuição por entidade. Entidades filhas herdam configurações marcadas como recursivas até definirem regra própria."
+msgstr ""
+
+#: front/config.form.php
+msgid "Entidade"
+msgstr ""
+
+#: front/config.form.php
+msgid "Abrir"
+msgstr ""
+
+#: front/config.form.php
+msgid "Configuração própria da entidade %s."
+msgstr ""
+
+#: front/config.form.php
+msgid "Restaurar herança"
+msgstr ""
+
+#: front/config.form.php
+msgid "A entidade %1$s herda a configuração recursiva de %2$s. Salvar abaixo cria uma regra específica para ela."
+msgstr ""
+
+#: front/config.form.php
+msgid "A entidade %s ainda não possui configuração própria nem ancestral recursivo. Ajuste e salve abaixo para ativar."
+msgstr ""
+
+#: front/config.form.php
+msgid "Você possui permissão somente leitura em configuração. As alterações estão bloqueadas."
+msgstr ""
+
+#: front/config.form.php
+msgid "Ativação e escopo"
+msgstr ""
+
+#: front/config.form.php
+msgid "Ativar Smart Assign nesta entidade"
+msgstr ""
+
+#: front/config.form.php
+msgid "Quando desativado, nenhum chamado desta entidade é atribuído automaticamente."
+msgstr ""
+
+#: front/config.form.php
+msgid "Aplicar às entidades filhas (recursivo)"
+msgstr ""
+
+#: front/config.form.php
+msgid "Subentidades sem regra própria passam a usar esta configuração."
+msgstr ""
+
+#: front/config.form.php
+msgid "Modo de distribuição"
+msgstr ""
+
+#: front/config.form.php
+msgid "Rodízio"
+msgstr ""
+
+#: front/config.form.php
+msgid "Alterna sequencialmente entre os técnicos ativos do grupo, avançando a partir do último técnico que recebeu chamado."
+msgstr ""
+
+#: front/config.form.php
+msgid "Menor fila"
+msgstr ""
+
+#: front/config.form.php
+msgid "Atribui ao técnico ativo do grupo com menos chamados em aberto (não solucionados/fechados) em todas as entidades; usa rodízio no empate."
+msgstr ""
+
+#: front/config.form.php
+msgid "Gatilhos e regras"
+msgstr ""
+
+#: front/config.form.php
+msgid "Atribuir na criação do chamado"
+msgstr ""
+
+#: front/config.form.php
+msgid "Dispara quando o chamado nasce já vinculado a um grupo técnico (inclusive via regra de negócio)."
+msgstr ""
+
+#: front/config.form.php
+msgid "Atribuir ao adicionar ou trocar grupo técnico"
+msgstr ""
+
+#: front/config.form.php
+msgid "Dispara quando um grupo técnico é atribuído posteriormente a um chamado aberto."
+msgstr ""
+
+#: front/config.form.php
+msgid "Não sobrescrever técnico já atribuído"
+msgstr ""
+
+#: front/config.form.php
+msgid "Quando ligado, pula se o chamado já tiver qualquer técnico atribuído. Desligado, pula só se alguém deste grupo já estiver atribuído."
+msgstr ""
+
+#: front/config.form.php
+msgid "Limite de chamados em aberto por técnico"
+msgstr ""
+
+#: front/config.form.php
+msgid "Contagem global entre todas as entidades (chamados não excluídos e com status menor que Solucionado). Use 0 para ilimitado."
+msgstr ""
+
+#: front/config.form.php
+msgid "Usuários excluídos da fila"
+msgstr ""
+
+#: front/config.form.php
+msgid "Segure Ctrl (ou Cmd) para selecionar ou remover múltiplos usuários que nunca devem receber atribuição automática."
+msgstr ""
+
+#: front/config.form.php
+msgid "Salvar configuração"
+msgstr ""
+
+#: front/config.form.php
+msgid "Últimas atribuições automáticas (25 mais recentes)"
+msgstr ""
+
+#: front/config.form.php
+msgid "Nenhuma atribuição automática registrada até o momento."
+msgstr ""
+
+#: front/config.form.php
+msgid "Data/Hora"
+msgstr ""
+
+#: front/config.form.php
+msgid "Chamado"
+msgstr ""
+
+#: front/config.form.php
+msgid "Grupo"
+msgstr ""
+
+#: front/config.form.php
+msgid "Técnico"
+msgstr ""
+
+#: front/config.form.php
+msgid "Modo"
+msgstr ""
+
+#: front/config.form.php
+msgid "Gatilho"
+msgstr ""
+
+#: front/config.form.php
+msgid "Criação"
+msgstr ""
+
+#: front/config.form.php
+msgid "Alteração de grupo"
+msgstr ""
