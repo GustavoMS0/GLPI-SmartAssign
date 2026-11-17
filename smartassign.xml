@@ -2,7 +2,7 @@
 <root>
    <name>Smart Assign</name>
    <key>smartassign</key>
-   <state>stable</state>
+   <state>beta</state>
    <logo>https://raw.githubusercontent.com/GustavoMS0/GLPI-SmartAssign/main/smartassign.png</logo>
    <description>
       <short>

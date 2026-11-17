@@ -1,5 +1,9 @@
 # Smart Assign
 
+> [!WARNING]
+> **Status: Em Desenvolvimento (Beta / Pré-homologação)**
+> Este plugin teve a arquitetura, a segurança e os fluxos validados por revisão de código, auditoria de segurança e testes unitários automatizados em CI (`PHP 7.4–8.3` com mocks de GLPI 10/11/12), mas **ainda não foi testado em uma instância GLPI ao vivo**. Valide em ambiente de homologação antes de usar em produção e reporte eventuais ajustes via Issues.
+
 Plugin para o GLPI que atribui chamados automaticamente a um técnico quando um grupo técnico é vinculado, usando distribuição por **Rodízio** ou **Menor fila**.
 
 | Versão do GLPI | Compatibilidade |
